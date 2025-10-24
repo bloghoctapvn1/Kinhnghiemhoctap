@@ -27,31 +27,38 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
   .nav-toggle{display:inline-block}
   #nav-main{display:none}
 }
-.menu li a {
+/* ===== Menu đổi màu (hover + active + dark mode) ===== */
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
   text-decoration: none;
-  color: #333333; /* bình thường */
+  color: #333333; /* màu bình thường */
   transition: color 0.3s;
 }
 
-.menu li a.active {
-  color: #FF5733; /* active trang */
+.nav li a.active {
+  color: #FF5733; /* màu khi trang hiện tại */
 }
 
-.menu li a:hover {
-  color: #3498db; /* khi di chuột */
+.nav li a:hover {
+  color: #3498db; /* màu khi rê chuột */
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  .menu li a {
+  body {
+    background: #0b1220;
     color: #ffffff;
   }
-  .menu li a.active {
+  .nav li a {
+    color: #ffffff;
+  }
+  .nav li a.active {
     color: #FFD700;
   }
-  .menu li a:hover {
+  .nav li a:hover {
     color: #00FFFF;
   }
 }
-
-
