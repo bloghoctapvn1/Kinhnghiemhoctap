@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   const links = document.querySelectorAll('.nav ul li a');
-  const currentUrl = window.location.href;
+  const currentUrl = window.location.href.split("/").pop(); // lấy tên file hiện tại
   links.forEach(link => {
-    if(currentUrl.includes(link.getAttribute('href'))) {
+    const linkHref = link.getAttribute('href');
+    if(linkHref === currentUrl || (linkHref === "index.html" && currentUrl === "")) {
       link.classList.add('active');
     }
   });
 });
+
