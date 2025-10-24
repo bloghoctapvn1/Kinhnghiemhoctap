@@ -57,7 +57,7 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
 
   /* Menu link trang hiện tại vẫn xanh dương đậm */
   .nav li a.active {
-    color: #00008B !important;
+    color: #1E90FF  !important;
   }
 
   /* Hover menu trong dark mode */
@@ -70,3 +70,4 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
     color: #ffffff; /* màu chữ nội dung trong dark mode */
   }
 }
+
