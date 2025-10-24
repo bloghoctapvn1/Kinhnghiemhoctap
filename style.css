@@ -27,3 +27,31 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
   .nav-toggle{display:inline-block}
   #nav-main{display:none}
 }
+.menu li a {
+  text-decoration: none;
+  color: #333333; /* bình thường */
+  transition: color 0.3s;
+}
+
+.menu li a.active {
+  color: #FF5733; /* active trang */
+}
+
+.menu li a:hover {
+  color: #3498db; /* khi di chuột */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .menu li a {
+    color: #ffffff;
+  }
+  .menu li a.active {
+    color: #FFD700;
+  }
+  .menu li a:hover {
+    color: #00FFFF;
+  }
+}
+
+
