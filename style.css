@@ -27,11 +27,7 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
   .nav-toggle{display:inline-block}
   #nav-main{display:none}
 }
-/* ===== Menu đổi màu (hover + active + dark mode) ===== */
-.nav li {
-  display: inline-block;
-}
-
+/* ===== Menu ===== */
 .nav li a {
   text-decoration: none;
   color: #333333; /* màu bình thường */
@@ -40,26 +36,37 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
 }
 
 .nav li a.active {
-  color: #00008B !important; /* màu trang hiện tại */
+  color: #00008B !important; /* xanh dương đậm, giữ cả light & dark mode */
 }
 
 .nav li a:hover {
-  color: #3498db; /* màu khi rê chuột */
+  color: #3498db; /* khi rê chuột */
 }
 
-/* Dark mode */
+/* ===== Dark mode ===== */
 @media (prefers-color-scheme: dark) {
   body {
     background: #0b1220;
+    color: #ffffff; /* màu chữ nội dung */
+  }
+
+  /* Menu link bình thường trong dark mode */
+  .nav li a {
     color: #ffffff;
   }
-  .nav li a {
-    color: #ffffff; /* màu bình thường trong dark mode */
-  }
+
+  /* Menu link trang hiện tại vẫn xanh dương đậm */
   .nav li a.active {
-    color: #00008B !important; /* màu xanh dương đậm vẫn giữ trong dark mode */
+    color: #00008B !important;
   }
+
+  /* Hover menu trong dark mode */
   .nav li a:hover {
-    color: #00FFFF; /* màu khi rê chuột trong dark mode */
+    color: #00FFFF;
+  }
+
+  /* Nội dung trang */
+  .content, .article, .card, .sidebar {
+    color: #ffffff; /* màu chữ nội dung trong dark mode */
   }
 }
