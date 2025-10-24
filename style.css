@@ -62,3 +62,33 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
     color: #00FFFF;
   }
 }
+/* Menu đổi màu không bị ảnh hưởng bởi style cũ */
+.nav ul li a {
+  color: #333333; /* màu bình thường */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav ul li a.active {
+  color: #FF5733 !important; /* màu trang hiện tại */
+}
+
+.nav ul li a:hover {
+  color: #3498db !important; /* màu khi rê chuột */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .nav ul li a {
+    color: #ffffff;
+  }
+  .nav ul li a.active {
+    color: #FFD700 !important;
+  }
+  .nav ul li a:hover {
+    color: #00FFFF !important;
+  }
+}
+
+
