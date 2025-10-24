@@ -39,7 +39,7 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
 }
 
 .nav li a.active {
-  color: #FF5733; /* màu khi trang hiện tại */
+  color: #00008B; /* màu khi trang hiện tại */
 }
 
 .nav li a:hover {
@@ -90,6 +90,7 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
     color: #00FFFF !important;
   }
 }
+
 
 
 
