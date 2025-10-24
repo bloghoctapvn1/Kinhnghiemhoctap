@@ -35,11 +35,12 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
 .nav li a {
   text-decoration: none;
   color: #333333; /* màu bình thường */
+  font-weight: 600;
   transition: color 0.3s;
 }
 
 .nav li a.active {
-  color: #00008B; /* màu khi trang hiện tại */
+  color: #00008B !important; /* màu trang hiện tại */
 }
 
 .nav li a:hover {
@@ -53,44 +54,12 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
     color: #ffffff;
   }
   .nav li a {
-    color: #ffffff;
+    color: #ffffff; /* màu bình thường trong dark mode */
   }
   .nav li a.active {
-    color: #FFD700;
+    color: #00008B !important; /* màu xanh dương đậm vẫn giữ trong dark mode */
   }
   .nav li a:hover {
-    color: #00FFFF;
+    color: #00FFFF; /* màu khi rê chuột trong dark mode */
   }
 }
-/* Menu đổi màu không bị ảnh hưởng bởi style cũ */
-.nav ul li a {
-  color: #333333; /* màu bình thường */
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.nav ul li a.active {
-  color: #00008B !important; /* màu trang hiện tại */
-}
-
-.nav ul li a:hover {
-  color: #3498db !important; /* màu khi rê chuột */
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .nav ul li a {
-    color: #ffffff;
-  }
-  .nav ul li a.active {
-    color: #FFD700 !important;
-  }
-  .nav ul li a:hover {
-    color: #00FFFF !important;
-  }
-}
-
-
-
-
