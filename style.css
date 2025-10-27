@@ -107,6 +107,19 @@ img {
   height: auto;
   border-radius: 10px;
 }
+/* Căn giữa ảnh trong phần hero trên mọi thiết bị */
+.hero {
+  text-align: center;
+}
+
+.hero img,
+.hero-image {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
