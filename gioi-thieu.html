@@ -102,27 +102,37 @@
     </div>
   </footer>
 
-  <script>
-    // Hiển thị năm tự động
-    (function(){
-      const y = document.getElementById('year');
-      if (y) y.textContent = new Date().getFullYear();
-    })();
+ <script>
+  // Hiển thị năm tự động
+  (function(){
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
 
-    // Tải menu
-    fetch("menu.html")
-      .then(r => r.text())
-      .then(d => {
-        document.getElementById("menu-container").innerHTML = d;
+  // Tải menu và đánh dấu trang hiện tại
+  fetch("menu.html")
+    .then(r => r.text())
+    .then(d => {
+      document.getElementById("menu-container").innerHTML = d;
+
+      // Đánh dấu trang hiện tại
+      const current = window.location.pathname.split("/").pop();
+      document.querySelectorAll("#menu-container a").forEach(link => {
+        if (link.getAttribute("href") === current) {
+          link.classList.add("active");
+        }
       });
+    });
 
-    // Mở/đóng menu mobile
-    function toggleMenu() {
-      const nav = document.getElementById("nav-main");
-      nav.style.display = (nav.style.display === "block") ? "none" : "block";
-    }
-  </script>
+  // Mở/đóng menu mobile
+  function toggleMenu() {
+    const nav = document.getElementById("nav-main");
+    nav.style.display = (nav.style.display === "block") ? "none" : "block";
+  }
+</script>
+
 
   <script src="JS"></script>
 </body>
 </html>
+
