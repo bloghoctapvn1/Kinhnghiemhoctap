@@ -18,47 +18,50 @@
   <link rel="icon" type="image/png" sizes="192x192" href="Favicon/web-app-manifest-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="Favicon/web-app-manifest-512x512.png">
 
-  <style>
-    /* Sửa bố cục lệch */
-    .content-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 30px;
-      align-items: start;
-      margin-top: 40px;
+<style>
+  main.container.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  section.hero {
+    flex: 2;
+    max-width: 750px;
+  }
+
+  aside.sidebar {
+    flex: 1;
+    max-width: 320px;
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  /* Bỏ margin top mặc định nếu có */
+  .hero img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Khi trên mobile: xếp dọc */
+  @media (max-width: 768px) {
+    main.container.main {
+      flex-direction: column;
     }
-    .hero {
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 40px;
+    aside.sidebar {
+      max-width: 100%;
+      margin-top: 20px;
     }
-    .hero img {
-      max-width: 80%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-    .sidebar {
-      background: #f9fafb;
-      padding: 20px;
-      border-radius: 12px;
-    }
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-    @media (max-width: 768px) {
-      .content-grid {
-        grid-template-columns: 1fr;
-      }
-      .sidebar {
-        order: -1;
-      }
-    }
-  </style>
+  }
+</style>
+
 </head>
 
 <body>
@@ -149,3 +152,4 @@
   <script src="JS"></script>
 </body>
 </html>
+
