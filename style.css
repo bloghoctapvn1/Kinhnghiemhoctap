@@ -94,23 +94,29 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
   border-radius: 6px;
   font-weight: bold;
 }
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-/* Căn giữa ảnh trong phần hero trên mọi thiết bị */
+/* ===== HERO CĂN ẢNH GIỮA TOÀN MÀN ===== */
 .hero {
+  width: 100%;
   text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent; /* hoặc thêm màu nếu bạn muốn */
 }
 
 .hero img,
 .hero-image {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
+
+
 
 
 
