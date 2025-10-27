@@ -94,6 +94,13 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
   border-radius: 6px;
   font-weight: bold;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 
 
