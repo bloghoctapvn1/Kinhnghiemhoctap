@@ -17,21 +17,61 @@
   <link rel="manifest" href="Favicon/site.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="Favicon/web-app-manifest-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="Favicon/web-app-manifest-512x512.png">
+
+  <style>
+    /* Sửa bố cục lệch */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      align-items: start;
+      margin-top: 40px;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .hero img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .sidebar {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        order: -1;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- Menu được tải tự động -->
   <div id="menu-container"></div>
 
-  <!-- ⚙️ Thêm lại main và section đúng chuẩn -->
   <main class="container main">
     <section class="hero">
       <h1>Blog Kinh nghiệm học tập</h1>
       <p>Chia sẻ mẹo thực tế, kỹ năng và chiến lược giúp bạn học nhanh hơn, nhớ lâu hơn và quản lý thời gian hiệu quả.</p>
 
-      <figure class="article-hero" style="text-align:center;">
-        <img src="Image/kinhnghiemhoctap.png" alt="Blog Kinh nghiệm học tập" class="hero-image"
-             style="max-width:80%;height:auto;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+      <figure class="article-hero">
+        <img src="Image/kinhnghiemhoctap.png" alt="Blog Kinh nghiệm học tập" class="hero-image">
         <figcaption style="color:#6b7280;margin-top:8px;">Blog Kinh nghiệm học tập</figcaption>
       </figure>
 
@@ -42,35 +82,37 @@
 
     <!-- Lưới bài viết -->
     <div class="content-grid">
-      <article class="card">
-        <h2><a href="meo-hoc-nhanh.html">Mẹo học nhanh nhớ lâu</a></h2>
-        <p>Tập trung vào các kỹ thuật ghi nhớ, ôn tập có chủ đích và tạo liên kết ý nghĩa để nhớ lâu.</p>
-        <p class="readmore"><a href="meo-hoc-nhanh.html">Xem bài viết</a></p>
-      </article>
+      <div>
+        <article class="card">
+          <h2><a href="meo-hoc-nhanh.html">Mẹo học nhanh nhớ lâu</a></h2>
+          <p>Tập trung vào các kỹ thuật ghi nhớ, ôn tập có chủ đích và tạo liên kết ý nghĩa để nhớ lâu.</p>
+          <p class="readmore"><a href="meo-hoc-nhanh.html">Xem bài viết</a></p>
+        </article>
 
-      <article class="card">
-        <h2><a href="ky-nang-ghi-chep.html">Kỹ năng ghi chép thông minh</a></h2>
-        <p>Cách ghi chép hiệu quả, sử dụng sơ đồ tư duy và tóm tắt khoa học để giảm thời gian ôn luyện.</p>
-        <p class="readmore"><a href="ky-nang-ghi-chep.html">Xem bài viết</a></p>
-      </article>
+        <article class="card">
+          <h2><a href="ky-nang-ghi-chep.html">Kỹ năng ghi chép thông minh</a></h2>
+          <p>Cách ghi chép hiệu quả, sử dụng sơ đồ tư duy và tóm tắt khoa học để giảm thời gian ôn luyện.</p>
+          <p class="readmore"><a href="ky-nang-ghi-chep.html">Xem bài viết</a></p>
+        </article>
 
-      <article class="card">
-        <h2><a href="quan-ly-thoi-gian-hoc.html">Quản lý thời gian học tập hiệu quả</a></h2>
-        <p>Chiến lược lập kế hoạch, phân bổ thời gian và dùng Pomodoro để tối đa năng suất học.</p>
-        <p class="readmore"><a href="quan-ly-thoi-gian-hoc.html">Xem bài viết</a></p>
-      </article>
+        <article class="card">
+          <h2><a href="quan-ly-thoi-gian-hoc.html">Quản lý thời gian học tập hiệu quả</a></h2>
+          <p>Chiến lược lập kế hoạch, phân bổ thời gian và dùng Pomodoro để tối đa năng suất học.</p>
+          <p class="readmore"><a href="quan-ly-thoi-gian-hoc.html">Xem bài viết</a></p>
+        </article>
 
-      <article class="card">
-        <h2><a href="ung-dung-cong-nghe.html">Ứng dụng công nghệ trong học tập</a></h2>
-        <p>Giới thiệu công cụ, ứng dụng và mẹo dùng phần mềm để học hiệu quả hơn.</p>
-        <p class="readmore"><a href="ung-dung-cong-nghe.html">Xem bài viết</a></p>
-      </article>
+        <article class="card">
+          <h2><a href="ung-dung-cong-nghe.html">Ứng dụng công nghệ trong học tập</a></h2>
+          <p>Giới thiệu công cụ, ứng dụng và mẹo dùng phần mềm để học hiệu quả hơn.</p>
+          <p class="readmore"><a href="ung-dung-cong-nghe.html">Xem bài viết</a></p>
+        </article>
 
-      <article class="card">
-        <h2><a href="meo-thi-cu.html">Mẹo thi cử giúp đạt điểm cao</a></h2>
-        <p>Chiến lược ôn thi, cách giữ bình tĩnh khi thi và mẹo xử lý câu hỏi khó.</p>
-        <p class="readmore"><a href="meo-thi-cu.html">Xem bài viết</a></p>
-      </article>
+        <article class="card">
+          <h2><a href="meo-thi-cu.html">Mẹo thi cử giúp đạt điểm cao</a></h2>
+          <p>Chiến lược ôn thi, cách giữ bình tĩnh khi thi và mẹo xử lý câu hỏi khó.</p>
+          <p class="readmore"><a href="meo-thi-cu.html">Xem bài viết</a></p>
+        </article>
+      </div>
 
       <aside class="sidebar">
         <h3>Chuyên mục</h3>
@@ -90,20 +132,17 @@
   </footer>
 
   <script>
-    // Tải menu từ file menu.html
     fetch("menu.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("menu-container").innerHTML = data;
       });
 
-    // Hàm mở/đóng menu trên điện thoại
     function toggleMenu() {
       const nav = document.getElementById("nav-main");
       nav.style.display = (nav.style.display === "block") ? "none" : "block";
     }
 
-    // Cập nhật năm tự động cho footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
