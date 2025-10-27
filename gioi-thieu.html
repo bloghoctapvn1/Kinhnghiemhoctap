@@ -34,9 +34,9 @@
 <link rel="icon" type="image/png" sizes="512x512" href="Favicon/web-app-manifest-512x512.png">
 </head>
 <body>
-<!-- Menu được tải tự động -->
-<div id="menu-container"></div>
-  <main class="container main">
+<header class="header">
+  <div class="wrap" id="menu-container"></div>
+</header>
     <article class="content article">
       <h1>Giới thiệu về Blog Kinh nghiệm học tập</h1>
 
@@ -126,10 +126,11 @@
   // Cập nhật năm tự động cho footer
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
+  
 <script src="JS"></script>
 </body>
 </html>
+
 
 
 
