@@ -8,36 +8,44 @@
   <meta name="keywords" content="kinh nghiệm học tập, mẹo học nhanh, kỹ năng ghi chép, quản lý thời gian, mẹo thi cử, học online">
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
+
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
-<link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
-<link rel="icon" type="image/svg+xml" href="Favicon/favicon.svg">
-<link rel="manifest" href="Favicon/site.webmanifest">
-<link rel="icon" type="image/png" sizes="192x192" href="Favicon/web-app-manifest-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="Favicon/web-app-manifest-512x512.png">
-
-
+  <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+  <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/svg+xml" href="Favicon/favicon.svg">
+  <link rel="manifest" href="Favicon/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="Favicon/web-app-manifest-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="Favicon/web-app-manifest-512x512.png">
 </head>
+
 <body>
- <!-- Menu được tải tự động -->
-<div id="menu-container"></div>
-  <h1>Blog Kinh nghiệm học tập</h1>
-  <p>Chia sẻ mẹo thực tế, kỹ năng và chiến lược giúp bạn học nhanh hơn, nhớ lâu hơn và quản lý thời gian hiệu quả.</p>
+  <!-- Menu được tải tự động -->
+  <div id="menu-container"></div>
 
-  <figure class="article-hero">
-    <img src="Image/kinhnghiemhoctap.png" alt="Blog Kinh nghiệm học tập" class="hero-image">
-    <figcaption style="color:#6b7280;margin-top:8px;">Blog Kinh nghiệm học tập</figcaption>
-  </figure>
+  <!-- ⚙️ Thêm lại main và section đúng chuẩn -->
+  <main class="container main">
+    <section class="hero">
+      <h1>Blog Kinh nghiệm học tập</h1>
+      <p>Chia sẻ mẹo thực tế, kỹ năng và chiến lược giúp bạn học nhanh hơn, nhớ lâu hơn và quản lý thời gian hiệu quả.</p>
 
-      <!-- Đoạn mô tả thêm -->
+      <figure class="article-hero" style="text-align:center;">
+        <img src="Image/kinhnghiemhoctap.png" 
+             alt="Blog Kinh nghiệm học tập" 
+             class="hero-image"
+             style="max-width:80%;height:auto;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+        <figcaption style="color:#6b7280;margin-top:8px;">Blog Kinh nghiệm học tập</figcaption>
+      </figure>
+
       <p>
-        Tại <strong>Blog Kinh nghiệm học tập</strong>, chúng tôi tin rằng học tập hiệu quả không chỉ dựa vào thời gian, mà còn ở phương pháp. 
-        Website này được tạo ra để chia sẻ những kinh nghiệm thực tế, mẹo học nhanh, ghi chép thông minh và quản lý thời gian hợp lý. 
+        Tại <strong>Blog Kinh nghiệm học tập</strong>, chúng tôi tin rằng học tập hiệu quả không chỉ dựa vào thời gian, mà còn ở phương pháp.
+        Website này được tạo ra để chia sẻ những kinh nghiệm thực tế, mẹo học nhanh, ghi chép thông minh và quản lý thời gian hợp lý.
         Cùng nhau, chúng ta sẽ khám phá cách học thông minh hơn — không phải học nhiều hơn.
       </p>
       <p>👉 <a href="meo-hoc-nhanh.html"><strong>Bắt đầu khám phá ngay</strong></a> với những mẹo học nhanh và ghi nhớ hiệu quả nhất!</p>
     </section>
 
+    <!-- Lưới bài viết -->
     <div class="content-grid">
       <article class="card">
         <h2><a href="meo-hoc-nhanh.html">Mẹo học nhanh nhớ lâu</a></h2>
@@ -85,49 +93,24 @@
   <footer class="footer">
     <p>&copy; <span id="year"></span> Blog Kinh nghiệm học tập</p>
   </footer>
+
   <script>
-  // Tải menu từ file menu.html
-  fetch("menu.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("menu-container").innerHTML = data;
-    });
+    // Tải menu từ file menu.html
+    fetch("menu.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu-container").innerHTML = data;
+      });
 
-  // Hàm mở/đóng menu trên điện thoại
-  function toggleMenu() {
-    const nav = document.getElementById("nav-main");
-    nav.style.display = (nav.style.display === "block") ? "none" : "block";
-  }
+    // Hàm mở/đóng menu trên điện thoại
+    function toggleMenu() {
+      const nav = document.getElementById("nav-main");
+      nav.style.display = (nav.style.display === "block") ? "none" : "block";
+    }
 
-  // Cập nhật năm tự động cho footer
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-  <script src="JS"></script>
+    // Cập nhật năm tự động cho footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
