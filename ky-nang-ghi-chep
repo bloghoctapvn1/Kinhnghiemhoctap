@@ -6,7 +6,7 @@
 <title>Kỹ năng ghi chép thông minh – Cách ghi chép giúp học nhanh, nhớ lâu và hiệu quả hơn</title>
 <meta name="description" content="Tìm hiểu kỹ năng ghi chép thông minh giúp bạn học nhanh, nhớ lâu và nâng cao hiệu quả học tập. Áp dụng phương pháp Cornell, sơ đồ tư duy và ký hiệu cá nhân để tối ưu hóa việc học.">
 <meta name="keywords" content="kỹ năng ghi chép thông minh, kinh nghiệm học tập, phương pháp ghi chép, học hiệu quả, ghi chép bài học">
-<link rel="canonical" href="https://bloghoctapvn1.github.io/Kinhnghiemhoctap/ky-nang-ghi-chep-thong-minh.html">
+<link rel="canonical" href="https://bloghoctapvn1.github.io/Kinhnghiemhoctap/ky-nang-ghi-chep-thong-minh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kỹ năng ghi chép thông minh – Cách ghi chép giúp học nhanh, nhớ lâu và hiệu quả hơn">
 <meta property="og:description" content="Khám phá các kỹ thuật ghi chép thông minh giúp bạn học nhanh, nhớ lâu và tăng hiệu suất học tập.">
@@ -180,3 +180,4 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
+
