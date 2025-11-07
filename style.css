@@ -245,41 +245,46 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
     display: block;
   }
 }
-/* Màu nền cho menu (header) */
-.header {
-  background-color: #16a34a; /* xanh lá đậm */
+/* ========== MENU (HEADER) ========== */
+header.header {
+  background-color: #16a34a; /* 🌿 Xanh lá đậm – có thể đổi */
   color: white;
+  padding: 10px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Màu chữ trong menu */
-.header .nav a, 
-.header .brand {
-  color: white !important;
+header.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  display: inline-block;
 }
 
-.header .nav a:hover {
+header.header a:hover {
   background-color: rgba(255,255,255,0.15);
+  border-radius: 8px;
 }
 
-/* Footer */
-.footer {
-  background-color: #16a34a;
+/* ========== FOOTER ========== */
+footer.footer {
+  background-color: #16a34a; /* cùng màu với menu */
   color: white;
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
-  border-top: 3px solid #15803d; /* viền xanh đậm hơn chút */
+  border-top: 3px solid #15803d; /* viền đậm hơn một chút */
+  font-size: 15px;
 }
 
-.footer a {
-  color: #e0f2e9;
-  text-decoration: underline;
+footer.footer a {
+  color: #d1fae5;
 }
 
-.footer a:hover {
-  color: #fff;
+footer.footer a:hover {
+  color: white;
 }
+
 
 
 
