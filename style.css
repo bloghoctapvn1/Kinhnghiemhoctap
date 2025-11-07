@@ -247,43 +247,48 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
 }
 /* ========== MENU (HEADER) ========== */
 header.header {
-  background-color: #16a34a; /* 🌿 Xanh lá đậm – có thể đổi */
-  color: white;
+  background-color: #ABE7B2; /* 💚 xanh pastel */
+  color: #1f2937; /* xám đậm dễ đọc */
   padding: 10px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 header.header a {
-  color: white;
+  color: #1f2937;
   text-decoration: none;
   font-weight: 500;
   padding: 10px 15px;
   display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header.header a:hover {
-  background-color: rgba(255,255,255,0.15);
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  color: #065f46; /* xanh đậm hơn khi hover */
 }
 
 /* ========== FOOTER ========== */
 footer.footer {
-  background-color: #16a34a; /* cùng màu với menu */
-  color: white;
+  background-color: #ABE7B2; /* 💚 cùng màu menu */
+  color: #1f2937;
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
-  border-top: 3px solid #15803d; /* viền đậm hơn một chút */
+  border-top: 3px solid #93d49c; /* đậm hơn 1 chút để có chiều sâu */
   font-size: 15px;
 }
 
 footer.footer a {
-  color: #d1fae5;
+  color: #065f46;
+  text-decoration: none;
 }
 
 footer.footer a:hover {
-  color: white;
+  text-decoration: underline;
+  color: #064e3b;
 }
+
 
 
 
