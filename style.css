@@ -245,6 +245,42 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
     display: block;
   }
 }
+/* Màu nền cho menu (header) */
+.header {
+  background-color: #16a34a; /* xanh lá đậm */
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Màu chữ trong menu */
+.header .nav a, 
+.header .brand {
+  color: white !important;
+}
+
+.header .nav a:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+/* Footer */
+.footer {
+  background-color: #16a34a;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  border-top: 3px solid #15803d; /* viền xanh đậm hơn chút */
+}
+
+.footer a {
+  color: #e0f2e9;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
 
 
 
