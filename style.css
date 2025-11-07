@@ -159,104 +159,19 @@ h2{color:var(--accent);font-size:1.05rem;margin-top:14px}
 .footer a:hover {
   text-decoration: underline;
 }
-/* ====== MENU CHUNG ====== */
-.header {
-  background-color: #2563eb; /* màu xanh lam đậm */
-  color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
-/* Tên thương hiệu */
-.header .brand {
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Menu chính */
-.nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  margin: 0 8px;
-}
-
-.nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: 0.3s ease;
-}
-
-.nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Nút menu (mobile) */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: 1px solid white;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 6px;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    width: 100%;
-    background-color: #1e40af;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav ul li {
-    margin: 10px 0;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav.active {
-    display: block;
-  }
-}
 /* ========== MENU (HEADER) ========== */
 header.header {
   background-color: #ABE7B2; /* 💚 xanh pastel */
-  color: #1f2937; /* xám đậm dễ đọc */
+  color: #000; /* chữ đen */
   padding: 10px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-weight: 700; /* in đậm */
 }
 
 header.header a {
-  color: #1f2937;
+  color: #000; /* chữ đen */
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700; /* in đậm */
   padding: 10px 15px;
   display: inline-block;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -271,16 +186,18 @@ header.header a:hover {
 /* ========== FOOTER ========== */
 footer.footer {
   background-color: #ABE7B2; /* 💚 cùng màu menu */
-  color: #1f2937;
+  color: #000; /* chữ đen */
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
-  border-top: 3px solid #93d49c; /* đậm hơn 1 chút để có chiều sâu */
+  border-top: 3px solid #93d49c;
   font-size: 15px;
+  font-weight: 700; /* in đậm */
 }
 
 footer.footer a {
-  color: #065f46;
+  color: #000; /* chữ đen */
+  font-weight: 700; /* in đậm */
   text-decoration: none;
 }
 
@@ -288,17 +205,6 @@ footer.footer a:hover {
   text-decoration: underline;
   color: #064e3b;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
